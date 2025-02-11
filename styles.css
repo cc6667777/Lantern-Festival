@@ -1,0 +1,82 @@
+/* 为整个页面添加背景图片 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/background.jpg'); /* 背景图片 */
+    background-size: cover;  /* 保证图片覆盖整个页面 */
+    background-position: center; /* 背景图片居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+/* 游戏容器样式 */
+.game-container {
+    background-color: rgba(255, 236, 210, 0.8); /* 半透明背景 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+.riddle {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.answer {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border: 2px solid #ff5722;
+    border-radius: 5px;
+}
+
+.submit, .next, .restart, .music-control {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit:hover, .next:hover, .restart:hover, .music-control:hover {
+    background-color: #e64a19;
+}
+
+.feedback {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.result {
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #ff5722;
+}
+
+.lantern-image {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/* 背景图片的尺寸控制 */
+body {
+    background-size: cover;
+    background-position: center;
+}

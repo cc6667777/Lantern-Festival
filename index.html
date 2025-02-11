@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>元宵节猜灯谜</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">元宵节猜灯谜</h1>
+        <div id="riddle" class="riddle">灯谜加载中...</div>
+        <input type="text" id="answer" class="answer" placeholder="请输入答案">
+        <button id="submit" class="submit">提交答案</button>
+        <p id="feedback" class="feedback"></p>
+        <button id="next" class="next" style="display: none;">下一个灯谜</button>
+        <button id="restart" class="restart" style="display: none;">再来一次</button>
+        
+        <!-- 音乐控制按钮 -->
+        <button id="music-control" class="music-control">暂停音乐</button>
+
+    <!-- 音乐播放器，自动播放 -->
+    <audio id="bg-music" autoplay loop>
+        <source src="C:\Users\CC\Desktop\YuanXiao\花灯遥.mp3" type="audio/mp3">
+        您的浏览器不支持音频播放。
+    </audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
